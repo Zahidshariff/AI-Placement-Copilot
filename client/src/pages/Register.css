@@ -1,0 +1,117 @@
+/* Register Page */
+.register-page {
+  min-height: 100vh;
+  height: auto;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  overflow-y: auto !important;
+  overflow-x: hidden;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px 30px;
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+.register-box h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+.register-box input {
+  width: 100%;
+  padding: clamp(14px, 4vw, 16px) clamp(14px, 4vw, 18px);
+  margin-bottom: 18px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  font-size: clamp(14px, 4vw, 18px);
+  transition: transform 0.3s;
+}
+
+.register-box input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+.register-box button {
+  width: 100%;
+  padding: clamp(14px, 4vw, 16px);
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: #fff;
+  font-size: clamp(18px, 4.5vw, 22px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.register-box p {
+  color: white;
+  text-align: center;
+  margin-top: 18px;
+  font-size: clamp(13px, 3.5vw, 15px);
+}
+
+.register-box a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-box a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .register-page {
+    padding: 30px 15px;
+    align-items: flex-start;
+  }
+  
+  .register-box {
+    max-width: 420px;
+    padding: 35px 25px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-page {
+    padding: 20px 12px;
+    align-items: flex-start;
+  }
+  
+  .register-box {
+    padding: 28px 18px;
+    border-radius: 18px;
+    margin: 15px auto;
+  }
+  
+  .register-box h1 {
+    margin-bottom: 20px;
+  }
+  
+  .register-box input {
+    padding: 12px 14px;
+    margin-bottom: 15px;
+  }
+}
